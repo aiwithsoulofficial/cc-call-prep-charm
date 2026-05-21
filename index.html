@@ -7,133 +7,128 @@
 <link rel="icon" type="image/png" href="https://amorsui.com.au/wp-content/uploads/2024/12/cropped-Amor-Sui-Aesthetic-Clinic-Favicon-32x32.png" sizes="32x32">
 <meta property="og:title" content="Call Prep - Charm / Amor Sui">
 <meta property="og:description" content="Demo links, questions, intel">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Mulish:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
 <style>
 :root {
-  --cream: #FDF8F1;
-  --warm: #F5EDE2;
-  --rose: #D4B8A8;
-  --rose-light: rgba(212,184,168,0.15);
-  --gold: #BC9050;
-  --gold-light: rgba(188,144,80,0.12);
-  --charcoal: #1E1E1E;
-  --text: #3A3530;
-  --text-light: #7A7068;
-  --text-muted: #A89E94;
-  --border: rgba(188,144,80,0.15);
-  --red: #B85C55;
+  --dark: #0A2A28;
+  --teal: #00D4BC;
+  --teal-mid: #00B4A0;
+  --red: #E84040;
+  --gold: #D4A854;
+  --white: #FFFFFF;
+  --light: #F4F8F7;
+  --text: #C8E0DC;
+  --text-muted: rgba(200,224,220,0.5);
+  --border: rgba(0,212,188,0.15);
 }
 *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
 html { scroll-behavior:smooth; }
 body {
-  font-family:'Mulish',sans-serif;
-  background:var(--cream);
+  font-family:'Open Sans',sans-serif;
+  font-weight:300;
+  background:var(--dark);
   color:var(--text);
   min-height:100vh;
   line-height:1.7;
   position:relative;
 }
 body::before {
-  content:''; position:fixed; inset:0; z-index:0; pointer-events:none; opacity:0.35;
-  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.5'/%3E%3C/svg%3E");
-  background-size:200px 200px;
+  content:''; position:fixed; inset:0; pointer-events:none; z-index:0;
+  background:radial-gradient(circle at 1px 1px, rgba(0,212,188,0.06) 1px, transparent 0);
+  background-size:30px 30px;
 }
 .container { max-width:760px; margin:0 auto; padding:40px 28px; position:relative; z-index:1; }
 
-/* Header */
-.header {
-  text-align:center; margin-bottom:48px; padding-bottom:32px;
-  border-bottom:1px solid var(--border);
-}
+.header { text-align:center; margin-bottom:48px; padding-bottom:32px; border-bottom:1px solid var(--border); }
 .header-name {
-  font-family:'Cormorant Garamond',serif;
-  font-weight:300; font-size:2.4rem; color:var(--charcoal);
-  margin-bottom:4px; letter-spacing:0.02em;
+  font-family:'Montserrat',sans-serif; font-weight:800; font-size:1.8rem;
+  color:var(--white); text-transform:uppercase; letter-spacing:2px; margin-bottom:4px;
 }
 .header-clinic {
-  font-family:'Cormorant Garamond',serif;
-  font-weight:400; font-size:1rem; color:var(--gold);
-  font-style:italic; margin-bottom:8px;
+  font-family:'Open Sans',sans-serif; font-weight:300; font-size:0.95rem;
+  color:var(--teal); margin-bottom:8px;
 }
 .header-date {
-  font-size:0.72rem; color:var(--text-muted); letter-spacing:0.1em; text-transform:uppercase;
+  font-family:'Montserrat',sans-serif; font-size:0.6rem; color:var(--text-muted);
+  letter-spacing:0.2em; text-transform:uppercase;
 }
 
-/* Links */
 h2 {
-  font-family:'Cormorant Garamond',serif;
-  font-weight:400; font-size:1.3rem; color:var(--charcoal);
+  font-family:'Montserrat',sans-serif; font-weight:700; font-size:0.85rem;
+  color:var(--white); text-transform:uppercase; letter-spacing:0.15em;
   margin:40px 0 16px; padding-bottom:8px;
-  border-bottom:1px solid var(--border);
+  border-bottom:2px solid var(--teal); display:inline-block;
 }
+
 .links { display:flex; flex-direction:column; gap:8px; }
 .links a {
   display:block; padding:16px 20px;
-  background:var(--gold-light); border:1px solid var(--border);
-  color:var(--charcoal); text-decoration:none; font-size:0.85rem;
-  font-weight:500; transition:all 0.2s; border-radius:8px;
+  background:rgba(0,212,188,0.06); border:1px solid rgba(0,212,188,0.2);
+  color:var(--gold); text-decoration:none;
+  font-family:'Montserrat',sans-serif; font-size:0.8rem; font-weight:600;
+  letter-spacing:0.5px; transition:all 0.2s;
 }
-.links a:hover { background:rgba(188,144,80,0.2); border-color:var(--gold); }
-.links a span { display:block; color:var(--text-muted); font-size:0.75rem; font-weight:300; margin-top:4px; }
+.links a:hover { background:rgba(0,212,188,0.12); border-color:rgba(0,212,188,0.4); transform:translateX(4px); }
+.links a span { display:block; font-family:'Open Sans',sans-serif; font-size:0.72rem; color:var(--text-muted); font-weight:300; margin-top:4px; letter-spacing:0; }
 
-/* Alert cards */
 .alert {
-  background:rgba(184,92,85,0.08); border:1px solid rgba(184,92,85,0.25);
-  border-radius:8px; padding:16px 20px; margin:10px 0; font-size:0.85rem;
+  background:rgba(232,64,64,0.08); border:1px solid rgba(232,64,64,0.3);
+  padding:16px 20px; margin:10px 0; font-size:0.85rem;
 }
-.alert strong { color:var(--red); }
+.alert strong { color:var(--red); font-weight:600; }
 
 .intel {
-  background:var(--gold-light); border:1px solid var(--border);
-  border-radius:8px; padding:16px 20px; margin:10px 0; font-size:0.85rem;
+  background:rgba(0,212,188,0.06); border:1px solid var(--border);
+  padding:16px 20px; margin:10px 0; font-size:0.85rem;
 }
-.intel strong { color:var(--gold); }
+.intel strong { color:var(--teal); font-weight:600; }
 
-/* Questions */
 .section-label {
-  font-family:'Mulish',sans-serif; font-size:0.6rem; font-weight:600;
+  font-family:'Montserrat',sans-serif; font-size:0.6rem; font-weight:700;
   letter-spacing:0.2em; text-transform:uppercase; margin-bottom:12px;
   display:flex; align-items:center; gap:8px;
 }
 .label-kelly { color:var(--gold); }
-.label-alicia { color:var(--rose); }
+.label-alicia { color:var(--teal); }
 .label-dot { width:8px; height:8px; border-radius:50%; }
 .dot-kelly { background:var(--gold); }
-.dot-alicia { background:var(--rose); }
+.dot-alicia { background:var(--teal); }
 
 .q-list { list-style:none; }
 .q-list li {
-  padding:10px 0; border-bottom:1px solid rgba(188,144,80,0.08);
-  font-size:0.85rem; color:var(--text); font-weight:300;
+  padding:10px 0; border-bottom:1px solid rgba(0,212,188,0.06);
+  font-size:0.85rem; font-weight:300;
 }
 .q-kelly { border-left:3px solid var(--gold); padding-left:16px; margin:12px 0; }
-.q-alicia { border-left:3px solid var(--rose); padding-left:16px; margin:12px 0; }
+.q-alicia { border-left:3px solid var(--teal); padding-left:16px; margin:12px 0; }
 
-/* Flow */
 .flow-list { list-style:none; counter-reset:flow; }
 .flow-list li {
-  padding:10px 0 10px 36px; border-bottom:1px solid rgba(188,144,80,0.08);
+  padding:10px 0 10px 36px; border-bottom:1px solid rgba(0,212,188,0.06);
   font-size:0.85rem; position:relative; font-weight:300;
 }
 .flow-list li::before {
   counter-increment:flow; content:counter(flow);
   position:absolute; left:0; top:10px;
-  width:24px; height:24px; border-radius:50%;
-  background:var(--gold-light); border:1px solid var(--border);
+  width:24px; height:24px;
+  background:rgba(0,212,188,0.1); border:1px solid var(--border);
   display:flex; align-items:center; justify-content:center;
-  font-size:0.65rem; font-weight:600; color:var(--gold);
+  font-family:'Montserrat',sans-serif; font-size:0.6rem; font-weight:700; color:var(--teal);
 }
 
-/* Footer */
 .footer {
   margin-top:48px; padding-top:24px; border-top:1px solid var(--border);
-  text-align:center; font-size:0.65rem; color:var(--text-muted);
-  letter-spacing:0.1em; text-transform:uppercase;
+  text-align:center;
 }
+.footer-text {
+  font-family:'Montserrat',sans-serif; font-size:0.6rem; letter-spacing:0.2em;
+  text-transform:uppercase; color:var(--text-muted);
+}
+.footer-text b { color:var(--teal); }
 
 @media(max-width:600px) {
   .container { padding:24px 16px; }
-  .header-name { font-size:1.8rem; }
+  .header-name { font-size:1.4rem; }
 }
 </style>
 </head>
@@ -164,13 +159,13 @@ h2 {
 
 <h2>What She Has Going For Her</h2>
 <div class="intel">
-  <strong>Credentials:</strong> 15+ years Emergency/ICU nursing. TGA compliant. Telehealth with registered medical doctor. Beautiful brand design (gold/cream/charcoal).
+  <strong>Credentials:</strong> 15+ years Emergency/ICU nursing. TGA compliant. Telehealth with registered medical doctor. Beautiful brand design.
 </div>
 <div class="intel">
   <strong>Services:</strong> Cosmetic Enhancers, PRP & PRF, PDO Threads, SQT Bio-Microneedling, Skin Boosters, IV Nutrition, Oxygen Therapy Facial
 </div>
 <div class="intel">
-  <strong>Missing:</strong> Zero B&As anywhere. Treatment-focused copy. No lead capture. SEO 28/100. No Google reviews. 659 IG followers.
+  <strong>Missing:</strong> Zero B&As. Treatment-focused copy. No lead capture. SEO 28/100. No Google reviews. 659 IG followers.
 </div>
 
 <h2>Kelly's Questions</h2>
@@ -185,10 +180,10 @@ h2 {
     <li>Is it just you or do you have staff?</li>
     <li>What's your social media process?</li>
     <li>How many hours a week on marketing?</li>
-    <li>What are you using for AI or tools right now?</li>
-    <li>Wave a magic wand - what does the dream version of this business look like?</li>
-    <li>Is there a treatment that's YOUR thing? The one you love and get amazing results with?</li>
-    <li>What problem do your clients come in with? What's their concern?</li>
+    <li>What tools are you using right now?</li>
+    <li>Wave a magic wand - what does the dream version look like?</li>
+    <li>Is there a treatment that's YOUR thing?</li>
+    <li>What problem do your clients come in with?</li>
   </ul>
 </div>
 
@@ -201,12 +196,12 @@ h2 {
     <li>How booked are you right now?</li>
     <li>Average client spend?</li>
     <li>Do you charge for consults?</li>
-    <li>What do you specialise in? Certain age group or type?</li>
-    <li>Do you have an ad spend budget?</li>
+    <li>What do you specialise in? Certain age group?</li>
+    <li>Ad spend budget?</li>
     <li>Current agency fees or marketing spend?</li>
-    <li>Do you get reports with conversion rates?</li>
+    <li>Getting reports with conversion rates?</li>
     <li>Average response time when leads come in?</li>
-    <li>Anything in the $199-$499 range for an intro offer?</li>
+    <li>Anything in $199-$499 for an intro offer?</li>
     <li>What days and hours are you open?</li>
   </ul>
 </div>
@@ -215,18 +210,20 @@ h2 {
 <ol class="flow-list">
   <li>Rapport + Kelly's questions (10 mins)</li>
   <li>Alicia's marketing questions (10 mins)</li>
-  <li>Drop the bombshells - booking broken + wrong phone number (2 mins)</li>
-  <li>Show the demo homepage - "This is what we see for Amor Sui" (5 mins)</li>
-  <li>Show the skin assessment - "This captures leads 24/7" (3 mins)</li>
-  <li>Walk through the roadmap together (5 mins)</li>
-  <li>Next steps - "We'll send this through, have a look, let's book a follow-up" (2 mins)</li>
+  <li>Bombshells - booking broken + wrong phone number (2 mins)</li>
+  <li>Show demo homepage (5 mins)</li>
+  <li>Show skin assessment (3 mins)</li>
+  <li>Walk through roadmap (5 mins)</li>
+  <li>Next steps + book follow-up (2 mins)</li>
 </ol>
 
 <div class="intel" style="margin-top:32px;">
   <strong>Contact:</strong> 0451910328 | amorsuiaestheticclinic@gmail.com | amorsui.com.au | @amor_sui_aestheticclinic
 </div>
 
-<div class="footer">Clinic Catalyst - Kelly + Alicia</div>
+<div class="footer">
+  <div class="footer-text">Prepared by <b>Clinic Catalyst</b> - Kelly + Alicia</div>
+</div>
 
 </div>
 </body>
